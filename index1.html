@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz App</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">CODTECH</div>
+  <ul class="nav-links">
+    <li onclick="showSection('home')">Home</li>
+    <li onclick="showSection('login')">Login</li>
+    <li onclick="showSection('signup')">Sign Up</li>
+    <li onclick="showSection('quiz')">Quiz</li>
+  </ul>
+</nav>
+
+<section class="section" id="home">
+  <h1>Welcome to Our Quiz App</h1>
+  <p>Test your knowledge and get instant feedback.</p>
+  <button onclick="showSection('quiz')">Get Started</button>
+
+  <h2>Quiz Categories</h2>
+  <div class="categories">
+    <div class="card">💻 Web Development</div>
+    <div class="card">🤖 Artificial Intelligence</div>
+    <div class="card">📊 Data Science</div>
+  </div>
+</section>
+
+<section class="section" id="login">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="text" placeholder="Username" id="loginUsername" required>
+    <input type="password" placeholder="Password" id="loginPassword" required>
+    <button type="submit">Login</button>
+  </form>
+  <p id="loginMsg"></p>
+</section>
+
+<section class="section" id="signup">
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    <input type="text" placeholder="Full Name" id="signupName" required>
+    <input type="email" placeholder="Email" id="signupEmail" required>
+    <input type="text" placeholder="Username" id="signupUsername" required>
+    <input type="password" placeholder="Password" id="signupPassword" required>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p id="signupMsg"></p>
+</section>
+
+<section class="section quiz" id="quiz">
+  <h1 id="question"></h1>
+  <div id="options"></div>
+  <p id="feedback"></p>
+  <button onclick="nextQuestion()">Next</button>
+</section>
+
+<script src="script1.js"></script>
+</body>
+</html>
