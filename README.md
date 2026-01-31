@@ -79,3 +79,7 @@ CSS – Used for styling, layout design, and responsiveness
 JavaScript – Used to implement quiz logic, DOM manipulation, event handling, and scoring
 
 Visual Studio Code (VS Code) – Used as the primary development environment
+
+#output:
+
+<img width="2878" height="1337" alt="Image" src="https://github.com/user-attachments/assets/dbcf81ac-e01f-4ff1-a947-f8455ae7315d" />
